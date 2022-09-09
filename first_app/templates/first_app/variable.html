@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Variable HTML</h1>
+    <h2>{{ first_name | upper }} {{ last_name }}</h2>
+    <ul>
+      {% for item in some_list %}
+      <li>{{item}}</li>
+      {% endfor %}
+    </ul>
+
+    <ul>
+      {% for key, value in some_dict.items %}
+      <li>key: {{key}} value: {{value}}</li>
+      {% endfor %}
+    </ul>
+    <h2>{# this is a comment #}</h2>
+  </body>
+</html>
